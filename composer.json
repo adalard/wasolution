@@ -1,0 +1,33 @@
+{
+    "name": "wasolution/api-client",
+    "description": "A PHP client for WhatsApp Solution API",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "whatsapp",
+        "api",
+        "messaging",
+        "wasolution"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WASolution\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WASolution",
+            "email": "suppport@wasolution.getligeeasy.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/wasolution/api-client/issues",
+        "source": "https://github.com/wasolution/api-client"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
