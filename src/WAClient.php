@@ -35,7 +35,7 @@ class WAClient
         $response = $this->client->post('/api/create-message', [
             'form_params' => [
                 'appkey' => $this->appKey,
-                'authKey' => $this->authKey,
+                'authkey' => $this->authKey,
                 'to' => $to,
                 'message' => $message
             ]
