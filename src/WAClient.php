@@ -7,7 +7,7 @@ use GuzzleHttp\Exception\GuzzleException;
 
 class WAClient
 {
-    private string $baseUrl = 'https://wasolution.getlifeeasy.com/api';
+    private string $baseUrl = 'https://wasolution.getlifeeasy.com';
     private string $appKey;
     private string $authKey;
     private Client $client;
@@ -32,7 +32,7 @@ class WAClient
      */
     public function sendMessage(string $to, string $message): array
     {
-        $response = $this->client->post('/create-message', [
+        $response = $this->client->post('/api/create-message', [
             'form_params' => [
                 'appkey' => $this->appKey,
                 'authKey' => $this->authKey,
